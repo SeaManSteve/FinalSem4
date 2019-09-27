@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+
+        #map {
+            height: 50%;
+            margin-top: 50px;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #btnSave{
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body class="w3-theme-d4">
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 id="loginText" class="text-white h4">Login</h5>
+
+            <form id="loginform">
+                <div class="form-group">
+                    <label for="username" class="text-white h8">UserName</label>
+                    <input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="text-white h8">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+            </form>
+            <button id="btnSubmit" class="btn btn-outline-success">Login</button>
+            <button id="btnLogOut" class="btn btn-outline-danger">Log Out</button>
+            <button type="button" id="dataView" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                View Data
+            </button>
+            <img id="imgView" height="150px" width="150px" src="placeholder">
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" id="UserId" href="reservationView.html">No User Selected</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div id="map"></div>
+<button id="btnSave" class="btn btn-outline-danger">Reserve Spot</button>
+<div id="container">
+    <div id="chart_div"></div>
+    <div id="bar_div"></div>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBz9NokDHJz386DLlllk-h5ZwlkpIwnPxQ",
+        authDomain: "babainskifinal.firebaseapp.com",
+        databaseURL: "https://babainskifinal.firebaseio.com",
+        projectId: "babainskifinal",
+        storageBucket: "babainskifinal.appspot.com",
+        messagingSenderId: "453561420706"
+    };
+    firebase.initializeApp(config);
+
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCggFoLiCYIbODquejih3Uc2bFv20a3Q8A&callback=initMap" async defer></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+</body>
+</html>
