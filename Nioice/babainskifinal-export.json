@@ -1,0 +1,87 @@
+{
+  "SpotList" : {
+    "Spot0" : {
+      "id" : 0,
+      "lat" : 43.376769826128516,
+      "long" : -79.80782241808805,
+      "open" : true,
+      "plate" : "placeholder",
+      "platePhoto" : "placeholder",
+      "userId" : 0
+    },
+    "Spot1" : {
+      "id" : 1,
+      "lat" : 43.37701300305544,
+      "long" : -79.80755895823984,
+      "open" : true,
+      "plate" : "placeholder",
+      "platePhoto" : "placeholder",
+      "userId" : 0
+    },
+    "Spot2" : {
+      "id" : 2,
+      "lat" : 43.37627193368902,
+      "long" : -79.807159972085,
+      "open" : true,
+      "plate" : "placeholder",
+      "platePhoto" : "placeholder",
+      "userId" : 0
+    },
+    "Spot3" : {
+      "id" : 3,
+      "lat" : 43.37674274731057,
+      "long" : -79.80600921265733,
+      "open" : true,
+      "plate" : "placeholder",
+      "platePhoto" : "placeholder",
+      "userId" : 0
+    },
+    "Spot4" : {
+      "id" : 4,
+      "lat" : 43.376347919636636,
+      "long" : -79.80790855204032,
+      "open" : true,
+      "plate" : "placeholder",
+      "platePhoto" : "placeholder",
+      "userId" : 0
+    },
+    "Spot5" : {
+      "id" : 5,
+      "lat" : 43.37631305064417,
+      "long" : -79.80830838168504,
+      "open" : true,
+      "plate" : "placeholder",
+      "platePhoto" : "placeholder",
+      "userId" : 0
+    }
+  },
+  "userList" : {
+    "user1" : {
+      "id" : 1,
+      "name" : "Maria Sharpova",
+      "openRes" : 1,
+      "password" : "maria",
+      "role" : "user",
+      "totalRes" : 49,
+      "username" : "maria"
+    },
+    "user2" : {
+      "id" : 2,
+      "name" : "Alex Babanski",
+      "openRes" : 1,
+      "password" : "reflow",
+      "role" : "admin",
+      "totalRes" : 19,
+      "username" : "imgoingtocuba"
+    },
+    "user3" : {
+      "id" : 3,
+      "name" : "Alexander Tetersuck",
+      "openRes" : 1,
+      "password" : "jpa",
+      "role" : "user",
+      "totalRes" : 11,
+      "username" : "sesame"
+    }
+  }
+}
